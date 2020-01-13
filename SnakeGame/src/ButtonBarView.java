@@ -22,23 +22,22 @@ public class ButtonBarView extends JPanel {
 		this.setPreferredSize(new Dimension(SnakeUtils.BREITE, 30));
 
 		startButton = new JButton("Spiel Starten");
-		leichtButton = new JButton("Schwierigkeit verringern");
-		schwerButton = new JButton("Schwierigkeit erhöhen");
-		spielBeendenButton = new JButton("Spiel abbrechen");
-		
-		
-		
 		startButton.addActionListener(snakeController.getStartGameListener());
-		schwerButton.addActionListener(snakeController.getSchwierigkeitErhoehenListener());
-		leichtButton.addActionListener(snakeController.getSchwierigkeitVerringernListener());
-		spielBeendenButton.addActionListener(snakeController.getExitGameListener());
-
-		setLayout(new GridLayout());
 		add(startButton);
-		add(leichtButton);
-		add(schwerButton);
-		add(spielBeendenButton);
-
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		setLayout(new GridLayout());
+		
 	}
 
 	public void setPauseButton() {

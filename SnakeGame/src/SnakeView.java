@@ -48,12 +48,12 @@ public class SnakeView extends JPanel {
 		ArrayList<Point> snakeLocations = snakeController.getSnakePoints();
 		for (int i = 0; i < snakeLocations.size(); i++) {
 			// Farbe der Schlange
-			graphic.setColor(Color.GREEN);
+			
 			graphic.fillRect(snakeLocations.get(i).x, snakeLocations.get(i).y, SnakeUtils.RAHMEN, SnakeUtils.RAHMEN);
 		}
 
-		// FARBE VOM ESSEN
-		graphic.setColor(Color.RED);
+		// FARBE VOM PUNKT
+		
 		graphic.fillRect(snakeController.getFoodLocation().x, snakeController.getFoodLocation().y, SnakeUtils.RAHMEN,
 				SnakeUtils.RAHMEN);
 
