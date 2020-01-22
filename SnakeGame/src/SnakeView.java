@@ -49,6 +49,8 @@ public class SnakeView extends JPanel {
 		for (int i = 0; i < snakeLocations.size(); i++) {
 			//FARBE DER SCHLANGE
 			
+			
+			
 			graphic.fillRect(snakeLocations.get(i).x, snakeLocations.get(i).y, SnakeUtils.RAHMEN, SnakeUtils.RAHMEN);
 		}
 
