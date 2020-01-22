@@ -25,10 +25,13 @@ public class ButtonBarView extends JPanel {
 		startButton.addActionListener(snakeController.getStartGameListener());
 		add(startButton);
 		
+		leichtButton = new JButton("Schwierigkeit verringern");
+		leichtButton.addActionListener(snakeController.getSchwierigkeitVerringernListener());
+		add(leichtButton);
 		
-		
-		
-		
+		schwerButton = new JButton("Schwierigkeit erhöhen");
+		schwerButton.addActionListener(snakeController.getSchwierigkeitErhoehenListener());
+		add(schwerButton);
 		
 		
 		
